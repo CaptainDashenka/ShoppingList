@@ -16,4 +16,9 @@
     </author>
     
     <feature name="http://api.phonegap.com/1.0/network"/>
+
+    <gap:platform name="android" />
+
+    <icon src="icon.png" />
+    <gap:splash src="splash.png" />
 </widget>
