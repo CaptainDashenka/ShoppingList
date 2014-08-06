@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shopping cart</title>
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.3.css">
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.3.js"></script>
+</head>
+<body>
+    
+    <div data-role="page" id="home">
+    <div data-role="header">
+      <h1>Shopping Cart</h1>
+      <a href="#AddPage" id='AddItemButton' class="ui-btn-right" data-role="button" data-icon="plus" data-transition="slide">Add Item</a>
+    </div>
+    <div data-role="content">
+      <form>
+            <ul data-role="listview">
+                <li>Bananas</li>
+                <li>Ice cream</li>
+            </ul>
+      </form>
+    </div>
+    <div data-role="footer">
+        footer
+    </div>
+    </div>
+
+    <div data-role="page" id="AddPage">
+        <div data-role="header">
+            <h1>Add new Item</h1>
+            <a href="#home" class="ui-btn-right" data-role="button" data-icon="back" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div data-role="content">
+            <form>
+                <input type="text" />
+                <div class="right-align">
+                    <input type="submit" value="Add" data-icon="check" data-iconpos="right" data-inline="true" />
+                </div>
+            </form>
+        
+        </div>
+        <div data-role="footer">OK</div>
+    </div>
+
+    <script>
+    
+        (function() {
+            $('#AddItemButton').on('click',function() {
+                console.log('clicked');
+            })
+        })();
+    
+    </script>
+
+</body>
+</html>

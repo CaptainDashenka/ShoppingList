@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "metatron.mobile.shoppipnglist"
+        versionCode = "10"
+        version     = "1.0.0">
+
+    <name>Shopping List</name>
+
+    <description>
+        A simple shopping list application
+    </description>
+
+    <author email="david@metatron.com.hk">
+        David Lazar
+    </author>
+    
+    <feature name="http://api.phonegap.com/1.0/network"/>
+</widget>
